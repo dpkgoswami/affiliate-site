@@ -1,15 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Deals</title>
+    <style>
+        /* Reset and base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header section */
+        header {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Deals section */
+        .deals-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .deals-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6600;
+        }
+
+        .deal-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .deal-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .deal-item img {
+            max-width: 80px;
+            max-height: 80px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .deal-content {
+            flex: 1;
+        }
+
+        .deal-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .deal-price {
+            color: #28a745;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .buy-now {
+            color: #fff;
+            background-color: #ff6600;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .buy-now:hover {
+            background-color: #e55b00;
+        }
+
+        /* Telegram section */
+        .telegram-cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .telegram-cta a {
+            text-decoration: none;
+            background-color: #0088cc;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .telegram-cta a:hover {
+            background-color: #0077b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Top Deals</h1>
-    <p>Discover the best deals of the day!</p>
-    <ul>
-        <li><a href="https://amazon.in/affiliate-link-1">Product 1 - ₹499</a></li>
-        <li><a href="https://amazon.in/affiliate-link-2">Product 2 - ₹999</a></li>
-    </ul>
-    <a href="https://t.me/yourtelegramgroup">Join our Telegram group for more deals!</a>
+    <header>
+        <h1>Welcome to Top Deals</h1>
+        <p>Your daily dose of the best Amazon deals!</p>
+    </header>
+
+    <div class="deals-container">
+        <h2>Top Deals of the Day</h2>
+        <div class="deal-item">
+            <img src="https://via.placeholder.com/80" alt="Product 1">
+            <div class="deal-content">
+                <p class="deal-title">Desktop Glass Planter</p>
+            </div>
+            <a href="https://amzn.to/3UV46LY" class="buy-now">Buy Now</a>
+        </div>
+
+
+    <div class="telegram-cta">
+        <p>Don’t miss out on more deals!</p>
+        <a href="https://t.me/+5eKRy-Ye0Zk2N2ZI">Join our Telegram Group</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Top Deals. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
